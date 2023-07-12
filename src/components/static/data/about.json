@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "title": "Bhrish Labs",
+    "logo": "",
+    "position": "software engineer",
+    "summary": "As a software engineer at Bhrish, my role will entail architecting, developing, and implementing sophisticated frontend solutions using ReactJS, along with backend solutions leveraging Java, Apache Camel, and Groovy. My primary duties encompass:",
+    "description": [
+      "Collaborating closely with clients and stakeholders to gain a comprehensive understanding of their requirements and needs.",
+      "Devising and implementing viable solutions that optimize customer experiences and streamline business processes.",
+      "Pioneering cutting-edge technologies, such as chatbots and virtual assistants, to elevate customer satisfaction and bolster productivity.",
+      "Crafting and executing intuitive and intelligent solutions that seamlessly integrate into existing business ecosystems.",
+      "Harnessing my expertise in ReactJS and Java to proficiently develop and maintain top-tier code that aligns with business requirements and adheres to industry standards."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Amelia",
+    "logo": "../../images/about/amelia_logo.png",
+    "position": "implementation engineer",
+    "summary": "As an Implementation Engineer at Amelia, I was responsible for designing, developing, and implementing advanced frontend solutions with ReactJS and backend solutions with Java and Groovy. My primary responsibilities included:",
+    "description": [
+      "Collaborated closely with clients and stakeholders to gain a comprehensive understanding of their requirements and needs.",
+      "Developed feasible solutions that optimized customer experiences and streamlined business processes.",
+      "Created cutting-edge technologies, such as chatbots and virtual assistants, that enhanced customer satisfaction and increased productivity.",
+      "Designed and implemented intuitive and intelligent solutions that seamlessly integrated into existing business ecosystems.",
+      "Utilized my expertise in ReactJS and Java to develop and maintain high-quality code that met business needs and industry standards."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "desparito",
+    "logo": "../../images/about/desparito_logo.png",
+    "position": "front-end developer",
+    "summary": "worked as a front-end developer intern at Desparito, which provided me with practical experience in the tech industry. Here is a brief summary of my experience:",
+    "description": [
+      "Worked alongside an experienced team of developers and utilized cutting-edge technologies like ReactJS to create dynamic and user-friendly web applications.",
+      "I Was responsible for creating and maintaining user interfaces, implementing design mockups, and writing clean and efficient code as a front-end developer intern.",
+      "Collaborated with the development team to identify and troubleshoot issues and participated in code reviews and other team activities."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "bansal group of institution",
+    "logo": "../../static/images/about/bist_logo.png",
+    "position": "bachelor of technology",
+    "summary": "As a software engineer at Bhrish, my role will entail architecting, developing, and implementing sophisticated frontend solutions using ReactJS, along with backend solutions leveraging Java, Apache Camel, and Groovy. My primary duties encompass:",
+    "description": [
+      "Collaborating closely with clients and stakeholders to gain a comprehensive understanding of their requirements and needs.",
+      "Devising and implementing viable solutions that optimize customer experiences and streamline business processes.",
+      "Pioneering cutting-edge technologies, such as chatbots and virtual assistants, to elevate customer satisfaction and bolster productivity.",
+      "Crafting and executing intuitive and intelligent solutions that seamlessly integrate into existing business ecosystems.",
+      "Harnessing my expertise in ReactJS and Java to proficiently develop and maintain top-tier code that aligns with business requirements and adheres to industry standards."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "sarvoday high sec school",
+    "logo": "../../static/images/about/sarvodaya_logo.png",
+    "position": "senior secondary",
+    "summary": "As a software engineer at Bhrish, my role will entail architecting, developing, and implementing sophisticated frontend solutions using ReactJS, along with backend solutions leveraging Java, Apache Camel, and Groovy. My primary duties encompass:",
+    "description": [
+      "Collaborating closely with clients and stakeholders to gain a comprehensive understanding of their requirements and needs.",
+      "Devising and implementing viable solutions that optimize customer experiences and streamline business processes.",
+      "Pioneering cutting-edge technologies, such as chatbots and virtual assistants, to elevate customer satisfaction and bolster productivity.",
+      "Crafting and executing intuitive and intelligent solutions that seamlessly integrate into existing business ecosystems.",
+      "Harnessing my expertise in ReactJS and Java to proficiently develop and maintain top-tier code that aligns with business requirements and adheres to industry standards."
+    ]
+  }
+]

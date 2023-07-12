@@ -1,0 +1,215 @@
+// css variables
+$main-color: #ffd32a;
+$name-font-size: 10rem;
+$static-color: #fff;
+$nav-bar-height: 10vh;
+$section-heigth: 90vh;
+
+// main css for html and body
+html {
+  font-size: 62.5%;
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bruno Ace", cursive;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+  }
+}
+// main styles
+#main-section {
+  height: $section-heigth;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  #main-section-outer-div {
+    height: 60%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    #main-section-name-div {
+      height: 80%;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        text-transform: uppercase;
+      }
+
+      span:nth-child(1) {
+        font-size: $name-font-size;
+        color: $static-color;
+      }
+      span:nth-child(2) {
+        color: $main-color;
+        font-size: 2.5rem;
+        letter-spacing: 1.5rem;
+      }
+      span:nth-child(3) {
+        font-size: $name-font-size;
+        color: $static-color;
+      }
+    }
+    #main-section-des-div {
+      height: 20%;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        font-size: 2rem;
+        text-transform: capitalize;
+        letter-spacing: 0.15rem;
+        word-spacing: 0.1rem;
+        color: #ffd32a;
+      }
+    }
+  }
+}
+
+// navbar style
+#nav-bar {
+  background-color: #000;
+  height: $nav-bar-height;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+
+  // style for unordered list
+  #nav-list {
+    width: 100%;
+    padding: 0em 3em 0em 3em;
+    margin: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    // style for logo
+    #logo {
+      cursor: pointer;
+      img {
+        height: 5em;
+        width: 5em;
+      }
+    }
+
+    // style for resume-download button
+    // style for resume-download
+    #resume-download {
+      color: $static-color;
+      cursor: pointer;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      border: 0.2em $main-color solid;
+      border-radius: 1.5em;
+      padding: 0.6em;
+    }
+
+    // style for color-switch
+    #color-switch {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // style for color-switch button
+      button {
+        cursor: pointer;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        padding: 0;
+
+        span {
+          border: 0.15em $main-color solid;
+          border-radius: 1.5em;
+          padding: 0.45em;
+          color: $static-color !important;
+        }
+      }
+    }
+  }
+}
+// about styles
+#about-section-container {
+  height: $section-heigth;
+  width: 100vw;
+
+  #about-section-wrapper {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    #about-section-row {
+      width: 85%;
+      overflow-x: scroll;
+      white-space: nowrap;
+      background-color: #a98;
+
+      .about-coloumns {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 31rem;
+        height: 40em;
+        background-color: $static-color;
+        box-shadow: inset 0px 0px 10px -5px rgba(0, 0, 0, 0.2),
+          0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+        margin: 5em;
+        transition: all ease-in-out 1s;
+        border-radius: 1.5rem;
+
+        // &:hover{
+        //   padding: 5em 32em 0 0;
+        //   border-radius: 2rem;
+        //   box-shadow: inset 0px 0px 10px -5px rgba(255, 211, 42,0.2),0px 5px 10px 0px rgba(255, 211, 42,0.5);
+        // }
+
+        .about-logo {
+          span {
+          }
+        }
+        .about-title {
+          span {
+          }
+        }
+        .about-position{
+          span{}
+        }
+        .about-summary{
+          span{}
+
+          .about-description {
+            li{}
+          }
+        }
+      }
+    }
+  }
+}
+
+// project styles
+
+// skill styles
+
+// contact styles
+
+// footer style
