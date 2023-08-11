@@ -1,3 +1,12 @@
+:root {
+/* css variables */
+--main-color: #ffd32a;
+--name-font-size: 10rem;
+--static-color: #fff;
+--nav-bar-height: 10vh;
+--section-heigth: 90vh;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -8,65 +17,14 @@ html body {
   font-family: "Bruno Ace", cursive;
   -webkit-user-select: none;
   -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   position: relative;
 }
-
-#main-section {
-  height: 90vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-#main-section #main-section-outer-div {
-  height: 60%;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#main-section #main-section-outer-div #main-section-name-div {
-  height: 80%;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#main-section #main-section-outer-div #main-section-name-div span {
-  text-transform: uppercase;
-}
-#main-section #main-section-outer-div #main-section-name-div span:nth-child(1) {
-  font-size: 10rem;
-  color: #fff;
-}
-#main-section #main-section-outer-div #main-section-name-div span:nth-child(2) {
-  color: #ffd32a;
-  font-size: 2.5rem;
-  letter-spacing: 1.5rem;
-}
-#main-section #main-section-outer-div #main-section-name-div span:nth-child(3) {
-  font-size: 10rem;
-  color: #fff;
-}
-#main-section #main-section-outer-div #main-section-des-div {
-  height: 20%;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#main-section #main-section-outer-div #main-section-des-div span {
-  font-size: 2rem;
-  text-transform: capitalize;
-  letter-spacing: 0.15rem;
-  word-spacing: 0.1rem;
-  color: #ffd32a;
-}
+/* navbar */
 
 #nav-bar {
   background-color: #000;
-  height: 10vh;
+  height: var(--nav-bar-height);
   width: 100vw;
   position: sticky;
   top: 0;
@@ -84,19 +42,19 @@ html body {
   flex-wrap: nowrap;
   align-items: center;
 }
-#nav-bar #nav-list #logo {
+#nav-list #logo {
   cursor: pointer;
 }
-#nav-bar #nav-list #logo img {
+#nav-list #logo img {
   height: 5em;
   width: 5em;
 }
-#nav-bar #nav-list #resume-download {
-  color: #fff;
+#nav-list #resume-download {
+  color: var(--static-color);
   cursor: pointer;
   font-size: 1.5rem;
   text-transform: uppercase;
-  border: 0.2em #ffd32a solid;
+  border: 0.2em var(--main-color) solid;
   border-radius: 1.5em;
   padding: 0.6em;
 }
@@ -112,14 +70,69 @@ html body {
   border: none;
   padding: 0;
 }
-#nav-bar #nav-list #color-switch button span {
-  border: 0.15em #ffd32a solid;
+#color-switch button span {
+  border: 0.15em var(--main-color) solid;
   border-radius: 1.5em;
   padding: 0.45em;
-  color: #fff !important;
+  color: var(--static-color) !important;
 }
 
-#about-section-container {
+/* main section */
+
+#main-section {
+  height: var(--section-heigth);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#main-section #main-section-outer-div {
+  height: 60%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#main-section-outer-div #main-section-name-div {
+  height: 80%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#main-section-name-div span {
+  text-transform: uppercase;
+}
+#main-section-name-div span:nth-child(1) {
+  font-size: var(--name-font-size);
+  color: var(--static-color);
+}
+#main-section-name-div span:nth-child(2) {
+  color: var(--main-color);
+  font-size: 2.5rem;
+  letter-spacing: 1.5rem;
+}
+#main-section-name-div span:nth-child(3) {
+  font-size: var(--name-font-size);
+  color: var(--static-color);
+}
+#main-section-outer-div #main-section-des-div {
+  height: 20%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#main-section-des-div span {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.15rem;
+  word-spacing: 0.1rem;
+  color: var(--main-color);
+}
+
+
+/* #about-section-container {
   height: 90vh;
   width: 100vw;
 }
@@ -134,7 +147,6 @@ html body {
   width: 85%;
   overflow-x: scroll;
   white-space: nowrap;
-  background-color: #a98;
 }
 #about-section-container #about-section-wrapper #about-section-row .about-coloumns {
   display: inline-flex;
@@ -148,4 +160,115 @@ html body {
   margin: 5em;
   transition: all ease-in-out 1s;
   border-radius: 1.5rem;
-}/*# sourceMappingURL=index.css.map */
+  padding: 5em 32em 0 0;
+  border-radius: 2rem;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns .about-simple {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns .about-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns .about-logo span img {
+  width: 15em;
+  height: 15em;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns .about-title {
+  width: 25em;
+  height: 7.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns .about-title span {
+  width: 25em;
+  font-size: 2rem;
+  text-wrap: wrap;
+  text-transform: uppercase;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns .about-position span {
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns .about-hover {
+  display: none;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover {
+  display: flex;
+  justify-content: center;
+  padding: 5em 32em 0 0;
+  border-radius: 2rem;
+  box-shadow: inset 0px 0px 10px -5px rgba(255, 211, 42, 0.2), 0px 5px 10px 0px rgba(255, 211, 42, 0.5);
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-simple {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-simple .about-logo {
+  top: 1rem;
+  left: 2rem;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-simple .about-logo span img {
+  width: 10em;
+  height: 10em;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-simple .about-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-simple .about-name .about-title {
+  top: 3.5rem;
+  left: 13.5rem;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-simple .about-name .about-title span {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-simple .about-name .about-position {
+  top: 6.55rem;
+  left: 13.5rem;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-simple .about-name .about-position span {
+  font-size: 1.7em;
+  letter-spacing: 0.2rem;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-hover {
+  display: block;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-hover .about-summary {
+  top: 15rem;
+  left: 3rem;
+  width: 57rem;
+  z-index: 99;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-hover .about-summary span {
+  text-wrap: wrap;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  line-height: 1.85rem;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-hover .about-description {
+  top: 22rem;
+  left: 2rem;
+  width: 57rem;
+  display: block;
+  z-index: 99;
+}
+#about-section-container #about-section-wrapper #about-section-row .about-coloumns:hover .about-hover .about-description ol {
+  text-wrap: wrap;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  line-height: 1.75rem;
+}# sourceMappingURL=index.css.map */
